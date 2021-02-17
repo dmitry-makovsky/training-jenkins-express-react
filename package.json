@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install:frontend": "cd frontend && npm install",
-    "install:production": "npm install && npm run install:frontend && npm run build --prefix frontend",
+    "bulid": "npm install && npm run install:frontend && npm run build --prefix frontend",
     "start:production": "node index.js",
     "start:dev:server": "PORT=4000 npx nodemon --ignore './frontend/' index.js",
     "start:dev:frontend": "cd frontend && npm run start",
