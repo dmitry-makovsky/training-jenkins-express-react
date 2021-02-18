@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install:frontend": "cd frontend && npm install",
-    "bulid": "npm install && npm run install:frontend && npm run build --prefix frontend",
+    "install:frontend": "cd frontend && npm ci",
+    "bulid": "npm ci && npm run install:frontend && npm run build --prefix frontend",
     "start:production": "node index.js",
     "start:dev:server": "PORT=4000 npx nodemon --ignore './frontend/' index.js",
     "start:dev:frontend": "cd frontend && npm run start",
